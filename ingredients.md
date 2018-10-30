@@ -6,14 +6,14 @@ __List of file execution:__
 * Cloning `web3-fabric-voting-dapp`
 * Installing Hyperledger Fabric binaries
 * Installing Hyperledger Fabric docker images  
-* Pulling fabric Images:
-    hyperledger/fabric-peer
-    hyperledger/fabric-orderer
-    hyperledger/fabric-ccenv
-    hyperledger/fabric-tools
-    hyperledger/fabric-ca
-    hyperledger/fabric-couchdb
-    hyperledger/fabric-kafka
+* Pulling fabric Images:<br>
+    hyperledger/fabric-peer<br>
+    hyperledger/fabric-orderer<br>
+    hyperledger/fabric-ccenv<br>
+    hyperledger/fabric-tools<br>
+    hyperledger/fabric-ca<br>
+    hyperledger/fabric-couchdb<br>
+    hyperledger/fabric-kafka<br>
     hyperledger/fabric-zookeeper
 * Cloning `fabric-chaincode-evm`
 * Starting channel 'mychannel'
