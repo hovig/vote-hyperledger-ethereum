@@ -6,7 +6,7 @@ With few clicks, run smart contracts from Solidity onto Ethereum Virtual Machine
 
 * The following architecture puts together an understanding of the component blocks that are making the application work:
 
-<img src="img/architecture.png" width="400" height="200">
+<img src="img/architecture.png" width="600" height="400">
 
 <hr>
 
@@ -66,11 +66,11 @@ Open your browser at [localhost:3000](http://localhost:3000) to view the app.
 
 <hr>
 
-![](img/start.png)
+<img src="img/start.png" width="600" height="400">
 
 <hr>
 
-![](img/add_yes.png)
+<img src="img/add_yes.png" width="600" height="400">
 
 <hr>
 
