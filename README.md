@@ -17,11 +17,6 @@ With few clicks, run smart contracts from Solidity onto Ethereum Virtual Machine
 	.	vote for candidates, in this case, polls<br>
 	.	display the vote counts on a simple web page<br>
 
-<hr>
-
-![](img/start.png)
-
-<hr>
 
 ## Before we start
 Make sure to have the following prerequisite tools are installed on your machine: [NPM](https://www.npmjs.com/), [Node](https://nodejs.org/en/), [Go](https://golang.org/dl/), [Docker](https://www.docker.com/)
@@ -36,7 +31,7 @@ These scripts in this project have been tried and are macOS compatible but if th
 
 __Read the full tutorial on how to build this application:__
 
-<u>_Note:_</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker `stop`, `rm` and `rmi` in `start.sh`. 
+<u>_Note:_</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker `stop`, `rm` and `rmi` in `start.sh`.
 
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
@@ -71,15 +66,7 @@ Open your browser at [localhost:3000](http://localhost:3000) to view the app.
 
 <hr>
 
-![](img/yes.png)
-
-<hr>
-
-![](img/maybe.png)
-
-<hr>
-
-![](img/all.png)
+![](img/start.png)
 
 <hr>
 
