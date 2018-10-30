@@ -12,13 +12,13 @@ With few clicks, run smart contracts from Solidity onto Ethereum Virtual Machine
 
 ## Before we start
 
-Make sure to have the following prerequisite tools are installed on your machine: [NPM](https://www.npmjs.com/), [Node](https://nodejs.org/en/), [Go](https://golang.org/dl/), [Docker](https://www.docker.com/)
+Make sure to have the following prerequisite tools are installed on your machine: [NPM](https://www.npmjs.com/), [Node](https://nodejs.org/en/), [Go](https://golang.org/dl/), [Docker](https://www.docker.com/).
 
-These scripts in this project have been tried and are macOS compatible but if there are machine issues, then follow the steps [here](https://github.com/hyperledger/fabric-chaincode-evm/blob/master/examples/EVM_Smart_Contracts.md) to bring up the needed containers, peers and fabproxy up and running manually.
+These scripts in this project have been tried and are macOS compatible but if there are machine issues, then follow the steps [here](https://github.com/hyperledger/fabric-chaincode-evm/blob/master/examples/EVM_Smart_Contracts.md) to bring up __manually__ the needed containers, peers and fabproxy up and running.
 
 <u>_Note:_</u> Take into consideration that running `./start/sh` will remove existing docker containers and images. If there are no containers or images on your machine, you can comment out the docker `stop`, `rm` and `rmi` in `start.sh`.
 
-If you would like to see the steps of everything happening behind the scenes, check [here](ingredients.md)
+If you would like to see the steps of everything happening behind the scenes, check [here](ingredients.md).
 
 
 ## STEPS
@@ -27,7 +27,7 @@ If you would like to see the steps of everything happening behind the scenes, ch
 
 <hr>
 
-__Read the full tutorial on how to build this application:__
+__Read carefully the steps of this tutorial to build a successful setup:__
 
 * <b>STEP 1 - `./start.sh` - run this script file</b>
 
@@ -47,11 +47,15 @@ export CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric
 peer chaincode install -n evmcc -l golang -v 0 -p github.com/hyperledger/fabric-chaincode-evm/evmcc
 peer chaincode instantiate -n evmcc -v 0 -C mychannel -c '{"Args":[]}' -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 
+
+3) # RUN this script file in a NEW separate terminal
+
+./proxy.sh
+
+# The fab proxy will be available at `localhost:5000`.
 ```
-* <b>STEP 3 - `./proxy.sh` - run this script file in a <u>_new_ terminal</u></b>. The fab proxy will be available at `localhost:5000`.
 
-
-* In a different terminal, go back to the project's folder and run the web app locally by doing:
+* <b>STEP 3 - In a separate terminal, go back to the project's folder and run the web app locally by doing:</b>
 
 ```javascript
 1) npm install
