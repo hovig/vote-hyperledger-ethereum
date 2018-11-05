@@ -23,7 +23,7 @@ If you would like to see the steps of everything happening behind the scenes, ch
 
 ## STEPS
 
-![](img/steps.png)
+![](img/hyperether-steps.png)
 
 <hr>
 
